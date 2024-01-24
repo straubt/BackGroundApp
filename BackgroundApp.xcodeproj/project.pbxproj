@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3BA32B32B60F62700CBFB7B /* PhotosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BA32B22B60F62700CBFB7B /* PhotosAPI.swift */; };
+		B3BA32B52B60FB5700CBFB7B /* FeedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BA32B42B60FB5700CBFB7B /* FeedState.swift */; };
 		B3DB83482B5FECA800D33024 /* BackgroundAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB83472B5FECA800D33024 /* BackgroundAppApp.swift */; };
 		B3DB834A2B5FECA800D33024 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB83492B5FECA800D33024 /* ContentView.swift */; };
 		B3DB834C2B5FECAA00D33024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DB834B2B5FECAA00D33024 /* Assets.xcassets */; };
@@ -14,9 +16,13 @@
 		B3DB83562B600E2400D33024 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB83552B600E2400D33024 /* Photo.swift */; };
 		B3DB83582B60128A00D33024 /* Environement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB83572B60128A00D33024 /* Environement.swift */; };
 		B3DB835C2B60132400D33024 /* environment.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3DB835B2B60132400D33024 /* environment.plist */; };
+		B3DD882C2B611A1800E5D402 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD882B2B611A1800E5D402 /* Topic.swift */; };
+		B3DD882E2B61253500E5D402 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD882D2B61253500E5D402 /* TopicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3BA32B22B60F62700CBFB7B /* PhotosAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAPI.swift; sourceTree = "<group>"; };
+		B3BA32B42B60FB5700CBFB7B /* FeedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedState.swift; sourceTree = "<group>"; };
 		B3DB83442B5FECA800D33024 /* BackgroundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DB83472B5FECA800D33024 /* BackgroundAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppApp.swift; sourceTree = "<group>"; };
 		B3DB83492B5FECA800D33024 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +31,8 @@
 		B3DB83552B600E2400D33024 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		B3DB83572B60128A00D33024 /* Environement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environement.swift; sourceTree = "<group>"; };
 		B3DB835B2B60132400D33024 /* environment.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environment.plist; sourceTree = "<group>"; };
+		B3DD882B2B611A1800E5D402 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		B3DD882D2B61253500E5D402 /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,10 @@
 				B3DB83552B600E2400D33024 /* Photo.swift */,
 				B3DB83572B60128A00D33024 /* Environement.swift */,
 				B3DB835B2B60132400D33024 /* environment.plist */,
+				B3BA32B22B60F62700CBFB7B /* PhotosAPI.swift */,
+				B3BA32B42B60FB5700CBFB7B /* FeedState.swift */,
+				B3DD882B2B611A1800E5D402 /* Topic.swift */,
+				B3DD882D2B61253500E5D402 /* TopicView.swift */,
 			);
 			path = BackgroundApp;
 			sourceTree = "<group>";
@@ -148,9 +160,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3DB83562B600E2400D33024 /* Photo.swift in Sources */,
+				B3BA32B52B60FB5700CBFB7B /* FeedState.swift in Sources */,
+				B3BA32B32B60F62700CBFB7B /* PhotosAPI.swift in Sources */,
 				B3DB834A2B5FECA800D33024 /* ContentView.swift in Sources */,
+				B3DD882E2B61253500E5D402 /* TopicView.swift in Sources */,
 				B3DB83482B5FECA800D33024 /* BackgroundAppApp.swift in Sources */,
 				B3DB83582B60128A00D33024 /* Environement.swift in Sources */,
+				B3DD882C2B611A1800E5D402 /* Topic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

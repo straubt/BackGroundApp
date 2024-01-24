@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Welcome
-struct Welcome: Codable {
+struct Photo: Codable, Identifiable {
     let id, slug: String
     let urls: Urls
     let user: User

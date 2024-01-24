@@ -26,19 +26,19 @@ struct ContentView: View {
                     if let topicList = feedState.topicList{
                         LazyHGrid(rows: rows){
                             ForEach(topicList) { topic in
-                                VStack{
-                                    AsyncImage(url: URL(string: topic.cover_photo.urls.raw)) { image in
-                                        image.centerCropped()
-                                    } placeholder: {
-                                        ProgressView()
-                                    }.frame(width: 200, height: 100)
-                                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                                    NavigationLink{
-                                        TopicView(topic: topic)
-                                            .onAppear(perform: {
-                                                feedState.topicImages = []
-                                            })
-                                    } label: {
+                                NavigationLink{
+                                    TopicView(topic: topic)
+                                        .onAppear(perform: {
+                                            feedState.topicImages = []
+                                        })
+                                } label: {
+                                    VStack{
+                                        AsyncImage(url: URL(string: topic.cover_photo.urls.raw)) { image in
+                                            image.centerCropped()
+                                        } placeholder: {
+                                            ProgressView()
+                                        }.frame(width: 200, height: 100)
+                                            .clipShape(RoundedRectangle(cornerRadius: 12))
                                         Text(topic.title)
                                     }
                                 }
@@ -51,13 +51,17 @@ struct ContentView: View {
                     if let imageList = feedState.imageList {
                         LazyVGrid(columns: columns) {
                             ForEach(imageList) { imageUrl in
-                                AsyncImage(url: URL(string: imageUrl.urls.raw)) { image in
-                                    image.centerCropped()
-                                } placeholder: {
-                                    ProgressView()
+                                NavigationLink{
+                                    PhotoView(photo: imageUrl)
+                                } label:{
+                                    AsyncImage(url: URL(string: imageUrl.urls.raw)) { image in
+                                        image.centerCropped()
+                                    } placeholder: {
+                                        ProgressView()
+                                    }
+                                    .frame(height: 150)
+                                    .clipShape(RoundedRectangle(cornerRadius: 12))
                                 }
-                                .frame(height: 150)
-                                .clipShape(RoundedRectangle(cornerRadius: 12))
                             }
                         }
                     } else {
